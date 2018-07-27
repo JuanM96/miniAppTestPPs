@@ -1,17 +1,28 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>MODIFICAR CHOFER</ion-title>
+    <ion-title>
+
+    </ion-title>
+    
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+    <ion-fab left bottom #fab4>
+        <button ion-fab color="dark" mini><ion-icon name="help"></ion-icon></button>
+        <ion-fab-list side="top">
+          <ion-fab #fab4>
+            <button ion-fab mini color="dark"><ion-icon name="document"></ion-icon></button>
+            <ion-fab-list side="right">
+                <button ion-fab (click)="goLink()"><ion-icon name="clipboard"></ion-icon></button>
+                <button ion-fab (click)="goLink()"><ion-icon name="folder-open"></ion-icon></button>
+            </ion-fab-list>
+          </ion-fab>
+          <button ion-fab><ion-icon name="clear"></ion-icon></button>
+          <button ion-fab (click)="goMostrar()"><ion-icon name="images"></ion-icon></button>
+        </ion-fab-list>
+      </ion-fab>
+      
+  <h2>Bienvenido Al Test de mi App</h2>
 </ion-content>
