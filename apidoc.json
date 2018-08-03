@@ -1,0 +1,8 @@
+{
+    "name": "Mini App Test PPS",
+    "version": "1.0.0",
+    "description": "Testeo de Documentacion y tutoriales",
+    "template": {
+        "forceLanguage": "es"
+    }
+}

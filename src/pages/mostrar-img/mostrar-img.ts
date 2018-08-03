@@ -15,10 +15,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MostrarImgPage {
   images=[{
-    url:"./assets/slide1.jpg"
+    url:"./assets/TutoLogin.jpg"
   },
   {
-    url:"./assets/2.gif"
+    url:"./assets/TutoLogin.gif"
   }
 ]
 

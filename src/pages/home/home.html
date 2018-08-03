@@ -1,4 +1,4 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
     <ion-title>MODIFICAR CHOFER</ion-title>
     <ion-title>
@@ -9,14 +9,18 @@
 </ion-header>
 
 <ion-content padding>
+
+
+
+
     <ion-fab left bottom #fab4>
         <button ion-fab color="dark" mini><ion-icon name="help"></ion-icon></button>
         <ion-fab-list side="top">
           <ion-fab #fab4>
             <button ion-fab mini color="dark"><ion-icon name="document"></ion-icon></button>
             <ion-fab-list side="right">
-                <button ion-fab (click)="goLink()"><ion-icon name="clipboard"></ion-icon></button>
-                <button ion-fab (click)="goLink()"><ion-icon name="folder-open"></ion-icon></button>
+                <button ion-fab (click)="goLinkApidoc()"><ion-icon name="clipboard"></ion-icon></button>
+                <button ion-fab (click)="goLinkCompoDoc()"><ion-icon name="folder-open"></ion-icon></button>
             </ion-fab-list>
           </ion-fab>
           <button ion-fab><ion-icon name="clear"></ion-icon></button>
@@ -25,4 +29,73 @@
       </ion-fab>
       
   <h2>Bienvenido Al Test de mi App</h2>
-</ion-content>
+</ion-content> -->
+
+<!-- <div class="contenidoLogin"> -->
+
+    <ion-header class="lgElem">
+        <ion-navbar color="dark">
+          <ion-title>Bienvenido Al Test del login</ion-title>
+    <!-- 
+          <img src="assets/img/audioOn.png" alt="" class="imgIcon" *ngIf = "muteSound">
+          <img src="assets/img/audioOff.png" alt="" class="imgIcon" *ngIf = "!muteSound"> -->
+        <ion-buttons end>
+            <button ion-button (click)="muteAudio()">
+              <ion-icon name="volume-off" *ngIf = "!muteSound" class="imgIcon"></ion-icon>
+              <ion-icon name="volume-up" *ngIf = "muteSound" class="imgIcon"></ion-icon>
+            </button>
+            <!-- <ion-toggle (ionChange)="muteAudio()"></ion-toggle> -->
+          </ion-buttons>
+        </ion-navbar>
+      </ion-header>
+    
+      <ion-content>
+        <img src="assets/imgs/icon.png" alt="" class="img">
+        <form id="formularioIngreso">
+          <ion-list>
+    
+            <ion-item padding style="background: transparent;">
+              <!-- <ion-label class="titulo" color="light"  stacked>{{ 'EMAIL' | translate }}</ion-label> -->
+              <ion-input class="titulo" autofocus placeholder="Email" type="email" name="email"></ion-input>
+            </ion-item>
+    
+            <ion-item padding style="background: transparent;">
+              <!-- <ion-label class="titulo" color="light" stacked>{{ 'PASSWORD' | translate }}</ion-label> -->
+              <ion-input class="titulo" placeholder="Clave" type="password"  name="clave"></ion-input>
+            </ion-item>
+    
+            <div padding>
+              <button ion-button icon-left block large (click)="doLogin()" class ="submit-btn">
+                <ion-icon name="log-in"></ion-icon>Ingresar</button>
+              <br>
+              <button ion-button round icon-left color="botonRegistrar" block large (click)="registrarse()" class ="submit-btn">
+                <ion-icon name="person-add"></ion-icon>Registrarse</button>
+              
+               <!--<button ion-button round block color="primary" (click)="goListadoChoferes()">TestListadoChoferesDisp</button>
+              <button ion-button round block color="primary" (click)="goVehiculo()">TestABMVehiculos</button>
+              <button ion-button round block color="primary" (click)="goEncuesta()">TestEncuesta</button> -->
+              <!-- <button ion-button round block color="primary" (click)="testAudio()">TestAudio</button>
+              <button ion-button round block color="primary" (click)="goTest()">TestQrChofer</button> -->
+            </div>
+    
+          </ion-list>
+    
+        </form>
+        
+      </ion-content>
+      <ion-footer>
+          <ion-fab left bottom #fab4>
+              <button ion-fab color="dark" mini><ion-icon name="help"></ion-icon></button>
+              <ion-fab-list side="top">
+                <ion-fab #fab4>
+                  <button ion-fab mini color="dark"><ion-icon name="document"></ion-icon></button>
+                  <ion-fab-list side="right">
+                      <button ion-fab (click)="goLinkApidoc()"><ion-icon name="clipboard"></ion-icon></button>
+                      <button ion-fab (click)="goLinkCompoDoc()"><ion-icon name="folder-open"></ion-icon></button>
+                  </ion-fab-list>
+                </ion-fab>
+                <button ion-fab><ion-icon name="clear"></ion-icon></button>
+                <button ion-fab (click)="goMostrar()"><ion-icon name="images"></ion-icon></button>
+              </ion-fab-list>
+            </ion-fab>
+      </ion-footer>

@@ -1,0 +1,17 @@
+{
+  "name": "Mini App Test PPS",
+  "version": "1.0.0",
+  "description": "Testeo de Documentacion y tutoriales",
+  "template": {
+    "forceLanguage": "es"
+  },
+  "sampleUrl": false,
+  "defaultVersion": "0.0.0",
+  "apidoc": "0.3.0",
+  "generator": {
+    "name": "apidoc",
+    "time": "2018-07-27T20:08:54.174Z",
+    "url": "http://apidocjs.com",
+    "version": "0.17.6"
+  }
+}
